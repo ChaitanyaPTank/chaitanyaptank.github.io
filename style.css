@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+div {
+    display: block;
+}
+
+body {
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+body, button, input, select, textarea {
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.block:not(:last-child), .box:not(:last-child), .breadcrumb:not(:last-child), .content:not(:last-child), .highlight:not(:last-child), .level:not(:last-child), .message:not(:last-child), .notification:not(:last-child), .pagination:not(:last-child), .progress:not(:last-child), .subtitle:not(:last-child), .table-container:not(:last-child), .table:not(:last-child), .tabs:not(:last-child), .title:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.hero.is-dark.is-bold {
+    background-image: linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
+}
+
+.hero.is-dark {
+    background-color: #363636;
+    color: #fff
+}
+
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.subtitle {
+    word-break: break-word;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+
+.title:not(.is-spaced)+.subtitle {
+    margin-top: -1.25rem;
+}
+
+@media screen and (min-width: 769px), print
+{
+    .hero.is-medium .hero-body {
+        padding: 9rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .container {
+        max-width: 960px;
+    }
+}
