@@ -4,91 +4,112 @@
     box-sizing: border-box;
 }
 
-*, ::after, ::before {
-    box-sizing: inherit;
-}
-
-div {
-    display: block;
-}
-
 body {
-    color: #4a4a4a;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-
-body, button, input, select, textarea {
-    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-
-.block:not(:last-child), .box:not(:last-child), .breadcrumb:not(:last-child), .content:not(:last-child), .highlight:not(:last-child), .level:not(:last-child), .message:not(:last-child), .notification:not(:last-child), .pagination:not(:last-child), .progress:not(:last-child), .subtitle:not(:last-child), .table-container:not(:last-child), .table:not(:last-child), .tabs:not(:last-child), .title:not(:last-child) {
-    margin-bottom: 1.5rem;
-}
-
-.hero.is-dark.is-bold {
-    background-image: linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
-}
-
-.hero.is-dark {
-    background-color: #363636;
-    color: #fff
+    line-height: 1.25;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .hero {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.hero-body {
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding: 3rem 1.5rem;
+    background-image: linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
+    color: #fff;
+    padding: 7rem 3.5rem;
 }
 
 .container {
-    flex-grow: 1;
-    margin: 0 auto;
-    position: relative;
-    width: auto;
+    margin: 1.5rem;
 }
 
 .title {
     font-size: 2rem;
     font-weight: 600;
-    line-height: 1.125;
 }
 
 .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.title, .subtitle {
     word-break: break-word;
 }
 
-.subtitle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.25;
+.footer {
+    color: #5D6063;
+    padding: 2.5rem 2.5rem;
+    background-color: #fafafa;
+}
+
+.footer p {
+    display: block;
+    text-align: center;
+}
+
+.has-text-centered {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    text-align: center;
+    margin: 1.5rem 1.5rem;
+}
+
+.ancestor {
+    display: flex;
+    padding: 2rem 0;
+    color: #5D6063;
+    justify-content: center;
+    width: auto;
+}
+
+.Box {
+    margin-right: 1rem;
+    box-shadow: 0 1em 0.75em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.box1 {
+    background-color: #3298dc;
+    color: #fff;
+    padding: 2rem 2rem;
+    border-radius: 0.25rem;
+}
+
+.box2 {
+    background-color: #eef6fc;
+    padding: 2rem 2rem;
+    border-radius: 0.25rem;
+}
+
+.box3 {
+    background-color: #00d1b2;
+    color: white;
+    padding: 2rem 2rem;
+    border-radius: 0.25rem;
+}
+
+.parent {
+    width: auto;
+    background-color: inherit;
+}
+
+.is-card {
+    padding-bottom: 0.75rem;
+    border-bottom: 0.1rem solid #fff;
+    margin-bottom: 1rem;
+}
+
+.is-light {
+    border-bottom: 0.1rem solid #5d6063;
 }
 
 
-.title:not(.is-spaced)+.subtitle {
-    margin-top: -1.25rem;
-}
-
-@media screen and (min-width: 769px), print
-{
-    .hero.is-medium .hero-body {
-        padding: 9rem 1.5rem;
+@media screen and (max-width: 600px) {
+    .ancestor {
+        display: block;
+        width: 100%;
     }
-}
 
-@media screen and (min-width: 1024px)
-{
-    .container {
-        max-width: 960px;
+    .Box {
+        margin-bottom: 1.5rem;
     }
 }
