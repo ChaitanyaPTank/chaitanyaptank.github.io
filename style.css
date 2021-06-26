@@ -112,4 +112,9 @@ body {
     .Box {
         margin-bottom: 1.5rem;
     }
+
+    .hero {
+        width: 100%;
+        padding: 5rem 1rem;
+    }
 }
