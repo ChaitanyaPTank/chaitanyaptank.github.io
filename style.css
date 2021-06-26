@@ -63,6 +63,7 @@ body {
 }
 
 .Box {
+    border-radius: 0.25rem;
     margin-right: 1rem;
     box-shadow: 0 1em 0.75em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
@@ -71,20 +72,17 @@ body {
     background-color: #3298dc;
     color: #fff;
     padding: 2rem 2rem;
-    border-radius: 0.25rem;
 }
 
 .box2 {
     background-color: #eef6fc;
     padding: 2rem 2rem;
-    border-radius: 0.25rem;
 }
 
 .box3 {
     background-color: #00d1b2;
     color: white;
     padding: 2rem 2rem;
-    border-radius: 0.25rem;
 }
 
 .parent {
@@ -110,6 +108,7 @@ body {
     }
 
     .Box {
+        margin: auto;
         margin-bottom: 1.5rem;
     }
 
@@ -117,4 +116,50 @@ body {
         width: 100%;
         padding: 5rem 1rem;
     }
+
+    .copyright {
+        font-size: 0.9rem;
+    }
+
+    .beta {
+        display: inline-block;
+        text-align: left !important;
+        font-size: 0.95rem;
+    }
+}
+
+.is-project-title {
+    padding-bottom: 0.5rem;
+    border-bottom: solid #333 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.is-tile {
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+.beta {
+    text-align: center;
+    font-weight: 500;
+    background-color: #fafafa;
+    position: fixed;
+    width: 100%;
+}
+
+.text {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+}
+
+.close {
+    background-color: #5d6063;
+    width: auto;
+    height: auto;
+    color: #fafafa;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
 }

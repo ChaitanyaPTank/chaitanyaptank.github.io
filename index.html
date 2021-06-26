@@ -4,51 +4,71 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="./style.css">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <title>ChaitanyaPTank</title>
   </head>
   <body>
     <div class="root">
-      <section class="hero">
-        <div class="container">
-          <h1 class="title">Chaitanya P Tank</h1>
-          <h2 class="subtitle">Engineer and Developer</h2>
+      <!--       <section class="beta" id="beta">
+        <div class="text">
+        NOTE: This site is currently underconstruction
         </div>
-      </section>
-      <section class="container">
-        <div class="ancestor">
-
-          <div class="Box">
-            <div class="box1">
-              <div class="parent">
-                <p class="title">Tic Tac Toe</p>
-                <p class="subtitle is-card">Language: C/C++</p>
-                <p class="content">Simple CLI tic-tac-toe modeled in C/C++ language</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="Box">
-            <div class="box2">
-              <div class="parent">
-                <p class="title">Data Structures</p>
-                <p class="subtitle is-card is-light">Language: C/C++</p>
-                <p class="content">Linked list and Doubly Linked list applied in C/C++</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="Box">
-            <div class="box3">
-              <div class="parent">
-                <p class="title">Util</p>
-                <p class="subtitle is-card">Language: C++</p>
-                <p class="content">Simple Gain manipulation audio plugin made with JUCE framework</p>
-              </div>
-            </div>
-          </div>
-
+        <div class="close" onClick="removeBeta()">
+        <i class="fas fa-times fa-lg"></i>
         </div>
-      </section>
+        </section>  -->
+
+        <section class="hero">
+          <div class="container">
+            <h1 class="title">Chaitanya P Tank</h1>
+            <h2 class="subtitle">Engineer and Developer</h2>
+          </div>
+        </section>
+        <section class="container">
+
+          <div class="project-section">
+            <div class="parent">
+              <div class="container">
+                <h1 class="title is-project-title">My Projects</h1>
+                <h2 class="subtitle">Here are some projects I am woking on / I have been wokring on</h2>
+              </div>
+            </div>
+
+            <div class="ancestor">
+
+              <div class="Box">
+                <div class="box1 is-tile">
+                  <div class="parent">
+                    <p class="title">Tic Tac Toe</p>
+                    <p class="subtitle is-card">Language: C/C++</p>
+                    <p class="content">Simple CLI tic-tac-toe modeled in C/C++ language</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Box">
+                <div class="box2 is-tile">
+                  <div class="parent">
+                    <p class="title">Data Structures</p>
+                    <p class="subtitle is-card is-light">Language: C/C++</p>
+                    <p class="content">Linked list and Doubly Linked list applied in C/C++</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Box">
+                <div class="box3 is-tile">
+                  <div class="parent">
+                    <p class="title">Util</p>
+                    <p class="subtitle is-card">Language: C++</p>
+                    <p class="content">Simple Gain manipulation audio plugin made with JUCE framework</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
     </div>
     <footer class="footer">
       <div class="has-text-centered">
@@ -72,5 +92,14 @@
       <p class="copyright">&copy ChaitanyaPTank | All Rights Reserved | 2021</p>
     </footer>
   </body>
+  <script>
+    function removeBeta() {
+          const betaTag = document.querySelector('#beta');
+          const parent = betaTag.parentNode;
+          setTimeout(function () {
+                parent.removeChild(betaTag);
+              }), 1000
+        }
+  </script>
 </html>
 
