@@ -62,10 +62,15 @@ body {
     width: auto;
 }
 
+.ancestor a {
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+}
+
 .Box {
     border-radius: 0.25rem;
-    margin-right: 1rem;
     box-shadow: 0 1em 0.75em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    height: 100%;
 }
 
 .box1 {
@@ -76,6 +81,7 @@ body {
 
 .box2 {
     background-color: #eef6fc;
+    color: #5d6063;
     padding: 2rem 2rem;
 }
 
@@ -102,6 +108,7 @@ body {
 
 
 @media screen and (max-width: 600px) {
+
     .ancestor {
         display: block;
         width: 100%;
@@ -126,6 +133,7 @@ body {
         text-align: left !important;
         font-size: 0.95rem;
     }
+
 }
 
 .is-project-title {
@@ -162,4 +170,19 @@ body {
     right: 0;
     padding: 0.5rem 0.75rem;
     cursor: pointer;
+}
+
+.is-name {
+    padding-bottom: 0.5rem;
+    border-bottom: solid #fff 0.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.ancestor a {
+    text-decoration: none;
+}
+
+.ancestor a:hover {
+    opacity: 0.95;
+    box-shadow: 0 1em 1em -0.125em rgb(10 10 10 / 12%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
